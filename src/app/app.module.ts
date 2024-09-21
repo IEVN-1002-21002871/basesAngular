@@ -4,15 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductlistComponent } from './product/productlist/productlist.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProductoFilterPipe } from './product/producto-filter.pipe';
+import { Ejemplo1Component } from './formularios/ejemplo1/ejemplo1.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductlistComponent
+    ProductlistComponent,
+    ProductoFilterPipe,
+    Ejemplo1Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
